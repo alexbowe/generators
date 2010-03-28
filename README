@@ -8,7 +8,7 @@ I'm doing a project for a subject at RMIT which needs to manage thousands of pat
 I started with the name generator, which selected a random male/female/last name from a file. I then realised an address generator would behave similarly (street, city, country lists), so I decided to make a Generator base class.
 
 Usage:
-A Generator can be created and used like so (passing it a dictionary of desired function names as keys and the files the should access as their dictionary entry):
+A Generator can be created and used like so (passing it a dictionary of desired function names as keys and the files they should access as their dictionary entry):
 
 >>>from Generator import Generator
 >>>gen = Generator({ 'key' : 'path/to/file', 'key2' : 'path/to/otherfile' })
@@ -25,3 +25,6 @@ A NameGenerator can be created used like so:
 'LILIA'
 >>>ng.malename()   # returns a random male name
 'ARTHUR'
+
+Notes:
+The name lists were taken from http://www.census.gov/genealogy/www/data/1990surnames/names_files.html, which actually provides percentages for each name too, if you wanted to make the name distribution more realistic...
