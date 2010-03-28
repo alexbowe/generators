@@ -15,7 +15,7 @@ A Generator can be created and used like so (passing it a dictionary of desired 
 >>>gen.key()  # returns a random line from path/to/file
 >>>gen.key2() # returns a random line from path/to/otherfile
 
-A NameGenerator can be created used like so:
+A NameGenerator can be created and used like so:
 
 >>>from NameGenerator import NameGenerator
 >>>ng = NameGenerator()
