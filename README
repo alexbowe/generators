@@ -1,0 +1,27 @@
+Author: Alex Bowe
+Email:  bowe[dot]alexander[at]gmail[dot]com
+Web:    alexbowe.com
+
+Background:
+I'm doing a project for a subject at RMIT which needs to manage thousands of patient records for a hospital. We haven't been given any sample data though, so I wanted to write a generator (so we can test it with small or large data sets whenever needed).
+
+I started with the name generator, which selected a random male/female/last name from a file. I then realised an address generator would behave similarly (street, city, country lists), so I decided to make a Generator base class.
+
+Usage:
+A Generator can be created and used like so (passing it a dictionary of desired function names as keys and the files the should access as their dictionary entry):
+
+>>>from Generator import Generator
+>>>gen = Generator({ 'key' : 'path/to/file', 'key2' : 'path/to/otherfile' })
+>>>gen.key()  # returns a random line from path/to/file
+>>>gen.key2() # returns a random line from path/to/otherfile
+
+A NameGenerator can be created used like so:
+
+>>>from NameGenerator import NameGenerator
+>>>ng = NameGenerator()
+>>>ng.lastname()   # returns a random lastname
+'DEWALD'
+>>>ng.femalename() # returns a random female name
+'LILIA'
+>>>ng.malename()   # returns a random male name
+'ARTHUR'

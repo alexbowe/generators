@@ -19,7 +19,7 @@ class Generator:
         randomly selecting a line from each file in the dictionary"""
         for key in filenames_dict:
             self.files[key] = CachedFile(filenames_dict[key])
-            add_function(self, self.make_func(key), key)
+            add_method(self, self.make_func(key), key)
 
     def make_func(self, key):
         """Makes a function to wrap get_random to a specific key"""

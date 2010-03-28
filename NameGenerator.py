@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 from Generator import Generator
-from CachedFile import CachedFile
 
 class NameGenerator(Generator):
+    "Name Generator"
     # Default Files Extracted From:
     # http://www.census.gov/genealogy/www/data/1990surnames/names_files.html
     filenames = {
@@ -13,10 +13,11 @@ class NameGenerator(Generator):
                 }
                 
     def __init__(self):
-        Generator.__init__(self, filenames)
+        Generator.__init__(self, NameGenerator.filenames)
 
 if __name__ == '__main__':
     ngen = NameGenerator()
     assert(ngen.lastname())
     assert(ngen.femalename())
     assert(ngen.malename())
+    print ngen.malename()
