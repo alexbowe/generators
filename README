@@ -1,6 +1,6 @@
 Author: Alex Bowe
 Email:  bowe[dot]alexander[at]gmail[dot]com
-Web:    alexbowe.com
+Web:    http://www.alexbowe.com
 
 Background:
 I'm doing a project for a subject at RMIT which needs to manage thousands of patient records for a hospital. We haven't been given any sample data though, so I wanted to write a generator (so we can test it with small or large data sets whenever needed).
